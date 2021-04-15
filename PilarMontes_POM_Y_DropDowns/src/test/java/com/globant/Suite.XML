@@ -3,11 +3,11 @@
 
 <suite name="Suite">
     <listeners>
-        <listener class-name="Ejercicio.Listener"/>
+        <listener class-name="com.globant.Ejercicio.Listener"/>
     </listeners>
     <test name="AppTest">
         <classes>
-            <class name="Ejercicio"/>
+            <class name="com.globant.Ejercicio"/>
         </classes>
     </test>
 </suite>
