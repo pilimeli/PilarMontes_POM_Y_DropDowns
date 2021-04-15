@@ -1,7 +1,9 @@
-package com.globant;
+package com.globant.test;
+import com.globant.test.Ejercicio;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import java.util.logging.Logger;
 
 
