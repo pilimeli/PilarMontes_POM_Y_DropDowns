@@ -19,7 +19,7 @@ public class EjercicioTest extends BaseTests {
      * @param data
      */
     @Test(dataProvider = "data-provider")
-    public void primerSelector (String data){
+    public void dropdownDayTest(String data){
         page.selectDropdown(data);
         Assert.assertEquals(page.getDayLabel(),"Day selected :- " + data);
     }
@@ -37,7 +37,7 @@ public class EjercicioTest extends BaseTests {
     }
 
     @Test(dataProvider = "multiselect-provider")
-    public void multiSelectTest (String data){
+    public void multiSelectCityTest (String data){
         page.multiSelect(data);
         page.button();
         Assert.assertEquals(page.cityLabel(),"First selected option is : " + data);

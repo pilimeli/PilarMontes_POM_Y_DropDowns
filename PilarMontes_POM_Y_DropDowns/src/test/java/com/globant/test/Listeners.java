@@ -19,7 +19,7 @@ import java.util.logging.Logger;
         @Override
         public void onTestSuccess(ITestResult iTestResult) {
             Logger logger = Logger.getLogger(EjercicioTest.class.getName());
-            logger.info("el test " +iTestResult.getName() +"paso exitosamente");
+            logger.info("El test " +iTestResult.getName() +" pasó exitosamente");
         }
         /**
          * Unit test for simple App.

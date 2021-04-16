@@ -12,6 +12,9 @@ public class Ejerciciopage extends BasePage {
     @FindBy(css = "#select-demo")
     private WebElement drpDays;
 
+    @FindBy(css = "p.getall-selected")
+    private WebElement labelCity;
+
     public Ejerciciopage(WebDriver pDriver) {
         super(pDriver);
     }
@@ -52,8 +55,8 @@ public class Ejerciciopage extends BasePage {
     }
 
     public String cityLabel (){
-        WebElement label = getDriver().findElement(By.cssSelector("p.getall-selected"));
-        String labelText = label.getText();
+        getWait().until(ExpectedConditions.visibilityOf(labelCity));
+        String labelText = labelCity.getText();
         return labelText;
     }
 
