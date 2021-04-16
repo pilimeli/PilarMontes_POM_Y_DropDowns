@@ -6,6 +6,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.Ejerciciopage;
 
+
+
 public class EjercicioTest extends BaseTests {
     Ejerciciopage page;
 
@@ -37,10 +39,12 @@ public class EjercicioTest extends BaseTests {
     }
 
     @Test(dataProvider = "multiselect-provider")
-    public void multiSelectCityTest (String data){
+    public void multiSelectCityTest (String data) throws InterruptedException {
         page.multiSelect(data);
+        Thread.sleep(2000);
         page.button();
         Assert.assertEquals(page.cityLabel(),"First selected option is : " + data);
+
     }
 
     @AfterTest

@@ -42,7 +42,7 @@ public class BasePage {
      * @return
      */
     public WebDriverWait getWait(){
-        WebDriverWait wait = new WebDriverWait(driver,20 );
+        WebDriverWait wait = new WebDriverWait(driver,40 );
         this.webdriverwait = wait;
         return webdriverwait;
     }

@@ -15,6 +15,9 @@ public class Ejerciciopage extends BasePage {
     @FindBy(css = "p.getall-selected")
     private WebElement labelCity;
 
+    @FindBy(css = "#printMe")
+    private WebElement buttonCity;
+
     public Ejerciciopage(WebDriver pDriver) {
         super(pDriver);
     }
@@ -50,8 +53,8 @@ public class Ejerciciopage extends BasePage {
     }
 
     public void button (){
-         WebElement button = getDriver().findElement(By.cssSelector("#printMe"));
-         button.click();
+        getWait().until(ExpectedConditions.elementToBeClickable(buttonCity));
+        buttonCity.click();
     }
 
     public String cityLabel (){
