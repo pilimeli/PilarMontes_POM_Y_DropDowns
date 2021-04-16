@@ -24,6 +24,6 @@ public class Ejerciciopage extends BasePage {
      */
     public String getDayLabel(){
         WebElement selector = getDriver().findElement(By.cssSelector(".selected-value"));
-        return selector.getText();
+        return selector.getText();By
     }
 }

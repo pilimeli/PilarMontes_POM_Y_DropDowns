@@ -10,8 +10,8 @@ public class MyDriver {
     public MyDriver(String browser){
         switch (browser){
             case "firefox":
-                driver = new FirefoxDriver();
-                System.setProperty("Webdriver.firefox.driver", "C:\\Program Files\\Drivers\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "C:/sdk/Drivers/geckodriver.exe");
+                 driver = new FirefoxDriver();
                 //WebDriver driverfirefox = new FirefoxDriver();
             break;
             case "chrome":
