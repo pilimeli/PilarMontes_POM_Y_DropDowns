@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
 <suite name="Suite">
+    <parameter name="browser" value="firefox"/>
     <listeners>
         <listener class-name="com.globant.test.Listeners"/>
     </listeners>
     <test name="BaseTests">
         <classes>
-            <class name="com.globant.test.BaseTests"/>
+            <class name="com.globant.test.EjercicioTest"/>
         </classes>
     </test>
 </suite>

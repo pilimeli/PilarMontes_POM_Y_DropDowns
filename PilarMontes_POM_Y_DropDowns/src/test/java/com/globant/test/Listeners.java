@@ -1,5 +1,4 @@
 package com.globant.test;
-import com.globant.test.Ejercicio;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -8,8 +7,6 @@ import java.util.logging.Logger;
 
 
     public class Listeners implements ITestListener {
-
-
         /**
          * Unit test for simple App.
          */
@@ -21,7 +18,7 @@ import java.util.logging.Logger;
          */
         @Override
         public void onTestSuccess(ITestResult iTestResult) {
-            Logger logger = Logger.getLogger(Ejercicio.class.getName());
+            Logger logger = Logger.getLogger(EjercicioTest.class.getName());
             logger.info("el test " +iTestResult.getName() +"paso exitosamente");
         }
         /**
