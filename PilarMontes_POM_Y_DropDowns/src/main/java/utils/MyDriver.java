@@ -12,15 +12,15 @@ public class MyDriver {
             case "firefox":
                 driver = new FirefoxDriver();
                 System.setProperty("Webdriver.firefox.driver", "C:\\Program Files\\Drivers\\geckodriver.exe");
-                WebDriver driverfirefox = new FirefoxDriver();
+                //WebDriver driverfirefox = new FirefoxDriver();
             break;
             case "chrome":
+                System.setProperty("webdriver.chrome.driver", "C:/sdk/Drivers/chromedriver.exe");
                 driver = new ChromeDriver();
-                System.setProperty("Webdriver.chrome.driver", "C:\\Program Files\\Drivers\\chromedriver.exe");
-                WebDriver drivercrhome = new ChromeDriver();
+               //WebDriver drivercrhome = new ChromeDriver();
             break;
             default:
-               break;
+                break;
         }
     }
     public WebDriver getDriver() {

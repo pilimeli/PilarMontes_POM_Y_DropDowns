@@ -1,6 +1,7 @@
 package com.globant.test;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -15,17 +16,17 @@ public class BaseTests {
 
     Ejerciciopage Ejercicio1;
     @BeforeSuite (alwaysRun = true)
-    @Parameters ({"Browser"})
+    @Parameters ({"browser"})
     public void beforesuite(String browser){
         myDriver = new MyDriver(browser);
         driver = myDriver.getDriver();
         driver.get("https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html");
     }
 
-    @Test
-    public void selectDropdown(){
-        Ejercicio1.setPrimerSelector();
-    }
+    //@Test
+    //public void selectDropdown(){
+        //Ejercicio1.setPrimerSelector();
+    //}
 
 
 

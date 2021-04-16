@@ -13,7 +13,5 @@ public class Ejerciciopage extends BasePage {
         super(pDriver);
     }
 
-    public void setPrimerSelector(){
-        clicOnSelect(primerSelector);
-    }
+
 }
